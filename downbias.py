@@ -23,7 +23,7 @@ def getHtml(url):
 # compile the regular expressions and find
 # all stuff we need
 def getUrl(html):
-    reg = r'(?:href|HREF)="?((?:http://)?.+?\.fts)'
+    reg = r'(?:href|HREF)="?((?:http://)?.+?\.fit)'
     #reg = r'(?:href|HREF)="?((?:https://)?.+?\.fts)'
     url_re = re.compile(reg)
     url_lst = url_re.findall(html.decode('gb2312'))
